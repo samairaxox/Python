@@ -1,0 +1,21 @@
+import random
+
+user_input = int(input("Enter 0 for rock, 1 for paper, or 2 for scissors: "))  
+computer_choice = random.randint(0, 2)
+print("The computer choice is", computer_choice)
+
+if user_input > 2 or user_input < 0:
+    print("Invalid")
+else:
+    
+    if computer_choice == 0 and user_input == 2:
+        print("U lose!")
+    elif user_input == 0 and computer_choice == 2:
+        print("U win!")
+    elif user_input == computer_choice:
+        print("TIE")
+    elif (user_input == 1 and computer_choice == 0) or (user_input == 2 and computer_choice == 1):
+        print("U Win!")
+    else:
+        print("U lose!")
+
