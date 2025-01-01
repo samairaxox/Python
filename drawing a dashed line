@@ -1,0 +1,7 @@
+from turtle import Turtle
+x = Turtle()
+for _ in range(15):
+    x.forward(10)
+    x.penup()
+    x.forward(10)
+    x.pendown()
