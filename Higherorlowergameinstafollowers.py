@@ -24,7 +24,7 @@ def play_game():
           print(f"Against B: format({format_celeb(celeb_b)}")
           x =input("Who has more followers: 'A' or 'B'").upper()
           a = celeb_a["followers"]
-          b = celeb_b["3"]
+          b = celeb_b["followers"]
           correct = (x == "A" and a > b ) or  (x == "B" and b > a  )
           if correct:
             score += 1
